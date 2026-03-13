@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section id="calculadora">
+    <section id="display">Calculadora da Isa</section>
+
+    <section id="linha0">
+        <button class="botao" onclick="PegaValor('*')">*</button>
+        <button class="botao" onclick="PegaValor('/')">/</button>
+        <button class="botao" onclick="PegaValor('-')">-</button>
+        <button class="botao" onclick="Limpa()">C</button>
+    </section>
+
+    <section id="linha1">
+        <button class="botao" onclick="PegaValor(1)">1</button>
+        <button class="botao" onclick="PegaValor(2)">2</button>
+        <button class="botao" onclick="PegaValor(3)">3</button>
+        <button class="botao" onclick="PegaValor('+')">+</button>
+    </section>
+
+    <section id="linha2">
+        <button class="botao" onclick="PegaValor(4)">4</button>
+        <button class="botao" onclick="PegaValor(5)">5</button>
+        <button class="botao" onclick="PegaValor(6)">6</button>
+        <button class="botao" onclick="CalculaValor()">=</button>
+    </section>
+
+    <section id="linha3">
+        <button class="botao" onclick="PegaValor(7)">7</button>
+        <button class="botao" onclick="PegaValor(8)">8</button>
+        <button class="botao" onclick="PegaValor(9)">9</button>
+        <button class="botao" onclick="PegaValor(0)">0</button>
+    </section>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
