@@ -1,40 +1,73 @@
-body {
-  min-height: 100vh;
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-section {
-    height: 100vh;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#display {
+    width: 41.25vh;
+    height: 10vh;
+
+    background-color: rgb(211, 211, 211);
+    color: rgb(95, 95, 95);
+    font-size: 150%;
+
+    margin: 0;
+    margin-bottom: 12%;
+    border-radius: 2px;
+    border: none;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
 }
 
-#botao {
-    width: 10%;
-    height: 20vh;
+.botao {
+    width: 10vh;
+    height: 10vh;
 
-    background-color: rgb(244, 127, 197);
-    font-family: 'Courier New', Courier, monospace;
-    font-size: large;
-    color: rgb(50, 42, 42);
-    border-radius: 10vh;
+    background-color: rgb(150, 91, 154);
+    color: rgb(236, 237, 237);
+    font-size: 25px;
+
+    margin-bottom: 5%;
+    border-radius: 15%;
     border: none;
+    
 }
 
-#botao:hover {
-    transition: 0.4s;
-    background-color: rgb(207, 166, 191);
-    border: none;
+.botao:hover {
+    background-color: rgb(144, 40, 152);
+    color: rgb(236, 237, 237);
 }
 
-#gatinhogif{
-    width: 100vh;
-    height: 100vh;
-    object-fit: cover;
+#calculadora {
+    background-color: rgb(236, 237, 237);
+    
+    border-radius: 10%;
 
-    border: 15px solid;
-    border-color: rgb(252, 169, 219);
-    border-radius: 50%;
+    margin: 2vh;
+    padding: 10px;
+}
+
+@media (min-width: 400px) {
+    
+    .botao{
+        width: 10vh;
+        height: 10vh; 
+    }
+
+    #display {
+        width: 40vh;
+        height: 10vh;
+    }
+
+    #calculadora {
+        padding: 25px;
+    }
 }
